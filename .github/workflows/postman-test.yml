@@ -21,11 +21,7 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      - name: Debug Postman Folder Names
-        run: |
-          sudo apt-get install jq -y
-          jq '.item[].name' Benlar-integraciones/BUC-Sincronizacion.json
-          
+
       - name: Run Newman Tests
         run: npm run test:buc
         continue-on-error: true
