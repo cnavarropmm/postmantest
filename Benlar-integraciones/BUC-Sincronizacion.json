@@ -3478,9 +3478,9 @@
                               }
                             ],
                             "url": {
-                              "raw": "{{api-benlar-products-qa}}/v1/clients/policies/uncollected",
+                              "raw": "http://benlar-products.qa.seguros.local/v1/clients/policies/uncollected",
                               "host": [
-                                "{{api-benlar-products-qa}}"
+                                "http://benlar-products.qa.seguros.local"
                               ],
                               "path": [
                                 "v1",
