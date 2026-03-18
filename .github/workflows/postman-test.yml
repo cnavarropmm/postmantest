@@ -1,0 +1,42 @@
+name: Benlar API Automation
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    # ESTA ES LA CLAVE: decirle a GitHub que trabaje dentro de tu subcarpeta
+    defaults:
+      run:
+        working-directory: postmantest/benlar-integraciones
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run Newman Tests
+        run: npm run test:buc
+        continue-on-error: true
+
+      - name: Generate Allure Report
+        run: |
+          npm install -g allure-commandline
+          allure generate allure-results --clean -o allure-report
+
+      - name: Upload Allure Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: reporte-allure-benlar
+          # Aquí también indicamos la ruta completa a la carpeta de resultados
+          path: postmantest/benlar-integraciones/allure-report/
