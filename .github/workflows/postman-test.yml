@@ -9,9 +9,6 @@ jobs:
   build:
     runs-on: ubuntu-latest
     # ESTA ES LA CLAVE: decirle a GitHub que trabaje dentro de tu subcarpeta
-    defaults:
-      run:
-        working-directory: ../benlar-integraciones
 
     steps:
       - name: Checkout code
