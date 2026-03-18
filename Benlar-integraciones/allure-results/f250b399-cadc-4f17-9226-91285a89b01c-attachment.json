@@ -1,0 +1,9 @@
+{
+    "accept": "text/plain",
+    "User-Agent": "PostmanRuntime/7.39.1",
+    "Cache-Control": "no-cache",
+    "Postman-Token": "4a9c9d85-820a-45ba-8109-00c67730e7d3",
+    "Host": "{{api-benlar-products-qa}}",
+    "Accept-Encoding": "gzip, deflate, br",
+    "Connection": "keep-alive"
+}
