@@ -1,9 +1,0 @@
-{
-    "Accept": "application/json",
-    "User-Agent": "PostmanRuntime/7.39.1",
-    "Cache-Control": "no-cache",
-    "Postman-Token": "4fa7ab60-acf3-4fbe-a9f1-1bbd0fee4a4a",
-    "Host": "benlar-products.qa.seguros.local",
-    "Accept-Encoding": "gzip, deflate, br",
-    "Connection": "keep-alive"
-}

@@ -1,0 +1,12 @@
+{
+    "Content-Type": "application/json; charset=utf-8",
+    "Transfer-Encoding": "chunked",
+    "Connection": "keep-alive",
+    "Date": "Thu, 19 Mar 2026 11:48:10 GMT",
+    "Server": "Kestrel",
+    "Access-Control-Allow-Origin": "*",
+    "X-Kong-Upstream-Latency": "410",
+    "X-Kong-Proxy-Latency": "0",
+    "Via": "kong/3.5.0",
+    "X-Kong-Request-Id": "460ed20c5ec4d3675b8bca2a3c35242e"
+}
